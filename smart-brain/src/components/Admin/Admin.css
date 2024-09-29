@@ -1,0 +1,17 @@
+/* In a separate CSS file */
+.table-container {
+    width: 600px; /* Adjust width as needed */
+    margin: 0 auto; /* Center the table horizontally */
+  }
+  
+  table {
+    border: 1px solid #ddd; /* Add a solid border around the entire table */
+  }
+  
+  th,
+  td {
+    border: 1px solid #ddd; /* Add borders to individual cells */
+    padding: 10px; /* Add padding for readability */
+    text-align: left; /* Align text to the left */
+  }
+  
