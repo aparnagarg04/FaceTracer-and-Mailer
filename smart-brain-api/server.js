@@ -22,7 +22,7 @@ const db = knex({
   connection: {
     host: 'relational-v2-hackedc2-v1.k.aivencloud.com', // Hostname of your PostgreSQL server
     user: 'avnadmin', // PostgreSQL username
-    password: 'AVNS_6PI6a3q70NJjYxOdhE5', // PostgreSQL password
+    password: '-', // PostgreSQL password
     database: 'defaultdb', // PostgreSQL database name
     port: 24220, // Port of your PostgreSQL server
     ssl: { // SSL configuration (since sslmode=require is used)
@@ -31,23 +31,7 @@ const db = knex({
     }
   }
 });
-// const db = knex({
-//   // connect to your own database here:
-//   client: 'pg',
-//   connection: {
-//     host : 'localhost',
-//     user : 'postgres',
-//     password : 'Aparna04@',
-//     database : 'smart-brain'
-//   }
-// });
-
-// db.select('*').from('login').then(data =>{
-//   console.log(data);
-// });
-// db.select('*').from('users').then(data =>{
-//   console.log(data);
-// });
+// 
 
 const app = express();
 app.use(express.json()); 

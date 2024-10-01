@@ -13,8 +13,8 @@ def create_s3():
     s3 = boto3.resource(
         service_name='s3',
         region_name='ap-south-1',
-        aws_access_key_id='AKIAZI2LFGP5D642T6OH',
-        aws_secret_access_key='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'
+        aws_access_key_id='-',
+        aws_secret_access_key='-'
 
     )
     return s3

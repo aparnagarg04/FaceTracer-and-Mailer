@@ -20,12 +20,6 @@ from flask import Flask,request,jsonify
 app = Flask(__name__)
 CORS(app)
 
-password = 'rnloreqhwcbrxxqv'
-# receiver = 'krishg2k4@gmail.com'
-sender = '06519011621.aiml@gmail.com'
-Facemodel = YOLO('yolov8n-face.pt')
-email_list_to_send = []
-
 
 def send_single_img_to_mail(recievers,path):
   for reciever in recievers:
